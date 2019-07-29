@@ -1,5 +1,5 @@
 import React from 'react';
-import style from '../components/Title.css';
+import style from './Title.css';
 
 const Title = props => (
   <div>

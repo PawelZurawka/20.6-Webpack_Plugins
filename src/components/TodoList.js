@@ -1,5 +1,5 @@
 import React from 'react';
-import style from '../components/TodoList.css';
+import style from './TodoList.css';
 
 const List = props => {
   const elements = props.list.map(element => (
