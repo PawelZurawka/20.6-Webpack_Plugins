@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: "Cairo", sans-serif;
+}
+
+.TodoApp {
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #3781b2;
+  color: #fff;
+}

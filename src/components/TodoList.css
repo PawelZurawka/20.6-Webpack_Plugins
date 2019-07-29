@@ -1,0 +1,17 @@
+.list {
+  cursor: pointer;
+  text-align: center;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  width: 100vw;
+}
+
+ul {
+  list-style: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+
+li {
+  padding: 10px 0;
+}
