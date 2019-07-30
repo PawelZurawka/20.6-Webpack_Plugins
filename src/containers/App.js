@@ -2,7 +2,7 @@ import React from 'react';
 import uuid from 'uuid';
 import style from './App.css';
 import Title from '../components/Title';
-import List from '../components/TodoList';
+import TodoList from '../components/TodoList';
 
 class App extends React.Component {
   constructor(props) {
@@ -38,16 +38,17 @@ class App extends React.Component {
     this.setState({ data });
   }
 
-  removeTodo(id) {
+  removeTodo = id => {
+    //wcześniej było removeTodo(id) użyłem arrow function - bez niej w propsie remove w komponencie TodoList trzeba by było napisać this.removeTodo.bind(this)
     const remainder = this.state.data.filter(todo => todo.id !== id);
     this.setState({ data: remainder });
-  }
+  };
 
   render() {
     return (
       <div className={style.TodoApp}>
         <Title title='Todo React App' numberOfTasks={this.state.data.length} />
-        <List list={this.state.data} remove={this.removeTodo.bind(this)} />
+        <TodoList items={this.state.data} remove={this.removeTodo} />
       </div>
     );
   }

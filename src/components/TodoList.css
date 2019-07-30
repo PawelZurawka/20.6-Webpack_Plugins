@@ -6,12 +6,7 @@
   width: 100vw;
 }
 
-ul {
-  list-style: none;
-  text-transform: uppercase;
+.listItem {
+  font-size: 18px;
   padding: 10px 20px;
-}
-
-li {
-  padding: 10px 0;
 }
